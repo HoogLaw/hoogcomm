@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact HoogComm | Work With Us</title>
+<meta name="description" content="HoogComm partners with organizations navigating complexity, transformation, and high-stakes communications challenges. Get in touch to discuss how we can help.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<nav id="site-nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="HoogComm home">
+      <img src="assets/images/hoogcomm-logo.png" alt="HoogComm" style="height:120px;width:auto;display:block;padding:0.75rem 0;">
+    </a>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html" data-nav="home">Home</a>
+      <a href="about.html" data-nav="about">About</a>
+      <a href="services.html" data-nav="services">Services</a>
+      <a href="leadership.html" data-nav="leadership">Leadership</a>
+      <a href="case-studies.html" data-nav="cases">Case Studies</a>
+      <a href="the-brief/index.html" data-nav="brief">The Brief</a>
+      <a href="contact.html" data-nav="contact" class="btn btn--primary" style="margin-left:0.5rem;">Work With Us</a>
+    </div>
+    <div class="nav-hamburger" id="hamburger" onclick="toggleMobileNav()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Contact</p>
+    <h1>Let's Talk.</h1>
+    <p class="lead">HoogComm partners with organizations navigating complexity, transformation, and high-stakes communications challenges. Share a bit about your situation and we'll follow up to discuss how we can help.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;">
+
+      <div>
+        <span class="overline">Get In Touch</span>
+        <h2>Contact HoogComm</h2>
+        <div class="divider"></div>
+
+        <div style="margin-top:1.5rem;">
+          <div style="margin-bottom:1.25rem;">
+            <div style="font-family:'Montserrat',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.35rem;">Email</div>
+            <a href="mailto:info@hoogcomm.com" style="font-family:'Raleway',sans-serif;font-size:1.05rem;font-weight:600;color:var(--navy);">info@hoogcomm.com</a>
+          </div>
+          <div style="margin-bottom:1.25rem;">
+            <div style="font-family:'Montserrat',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.35rem;">Phone</div>
+            <a href="tel:+13037172410" style="font-family:'Raleway',sans-serif;font-size:1.05rem;font-weight:600;color:var(--navy);">+1 (303) 717-2410</a>
+          </div>
+          <div style="margin-bottom:1.25rem;">
+            <div style="font-family:'Montserrat',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.35rem;">Location</div>
+            <div style="font-size:0.95rem;color:var(--text-dark);line-height:1.6;">Longmont, Colorado<br><span style="color:var(--text-muted);font-size:0.88rem;">Serving clients across North America and internationally</span></div>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem;padding:1.5rem;background:var(--light-gray);border-radius:var(--radius-lg);">
+          <span class="overline">Confidential Engagements</span>
+          <p style="margin-top:0.5rem;font-size:0.9rem;color:var(--text-muted);line-height:1.7;">Many of our client relationships are confidential. Conversations with HoogComm are treated with the same discretion we bring to every engagement. You can speak candidly about your situation.</p>
+        </div>
+      </div>
+
+      <div>
+        <span class="overline">Send a Message</span>
+        <h2 style="margin-bottom:1.5rem;">Tell Us About Your Situation</h2>
+        <form style="display:grid;gap:1.1rem;">
+          <div class="contact-field">
+            <label class="contact-label" for="name">Name</label>
+            <input class="contact-input" id="name" type="text" placeholder="Your name">
+          </div>
+          <div class="contact-field">
+            <label class="contact-label" for="org">Organization</label>
+            <input class="contact-input" id="org" type="text" placeholder="Your organization">
+          </div>
+          <div class="contact-field">
+            <label class="contact-label" for="email">Email</label>
+            <input class="contact-input" id="email" type="email" placeholder="you@organization.com">
+          </div>
+          <div class="contact-field">
+            <label class="contact-label" for="phone">Phone (optional)</label>
+            <input class="contact-input" id="phone" type="tel" placeholder="Your phone number">
+          </div>
+          <div class="contact-field">
+            <label class="contact-label" for="message">How can we help?</label>
+            <textarea class="contact-input contact-textarea" id="message" placeholder="Share a brief overview of your situation or what you're looking for."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" style="width:max-content;">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .contact-field { display:flex; flex-direction:column; gap:0.3rem; }
+  .contact-label { font-family:'Montserrat',sans-serif; font-size:0.75rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-muted); }
+  .contact-input { font-family:'Montserrat',sans-serif; font-size:0.9rem; padding:0.65rem 0.85rem; border:1.5px solid rgba(30,43,94,0.15); border-radius:var(--radius); color:var(--text-dark); background:#fff; transition:border-color 0.15s; }
+  .contact-input:focus { outline:none; border-color:var(--purple); }
+  .contact-textarea { min-height:120px; resize:vertical; }
+  @media (max-width:768px) {
+    .section .container > div[style*="grid-template-columns:1fr 1fr"] { grid-template-columns:1fr !important; gap:2.5rem !important; }
+  }
+</style>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">HoogComm</div>
+        <div class="footer-tagline">Strategic communications for high-stakes environments.</div>
+        <div style="margin-top:0.85rem;font-size:0.74rem;color:rgba(255,255,255,0.4);line-height:1.6;max-width:520px;">Longmont, Colorado — serving clients across North America and internationally. info@hoogcomm.com &nbsp;·&nbsp; +1 (303) 717-2410</div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="the-brief/index.html">The Brief</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <p>&copy; 2026 HoogComm. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    document.querySelectorAll('.nav-links a[data-nav]').forEach(function(a) {
+      if (a.dataset.nav === 'contact') a.classList.add('active');
+    });
+  })();
+  window.addEventListener('scroll', function() {
+    document.getElementById('site-nav').classList.toggle('scrolled', window.scrollY > 20);
+  });
+  function toggleMobileNav() {
+    document.getElementById('nav-links').classList.toggle('open');
+  }
+</script>
+</body>
+</html>
