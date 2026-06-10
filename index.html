@@ -11,6 +11,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 <style>
+  /* Ghosted hero image — right side, fades toward the copy */
+  .hero-photo {
+    position: absolute; top: 0; right: 0; bottom: 0; width: 58%;
+    background: url('assets/images/bda-ces-crowd.jpg') right center/cover no-repeat;
+    opacity: 0.16;
+    mix-blend-mode: luminosity;
+    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 50%, transparent 100%);
+    mask-image: linear-gradient(to left, rgba(0,0,0,1) 50%, transparent 100%);
+    pointer-events: none;
+  }
+  @media (max-width: 900px) { .hero-photo { display: none; } }
+</style>
+<style>
   /* Override hero to use solid gradient so text pops cleanly, matching inner page headers */
   .hero {
     background: linear-gradient(135deg, #1E1260 0%, #3A2A8A 60%, #4B3BAF 100%) !important;
@@ -41,6 +54,7 @@
 </nav>
 
 <section class="hero">
+  <div class="hero-photo" aria-hidden="true"></div>
   <div class="hero-content">
     <p class="hero-eyebrow">HoogComm</p>
     <h1>Strategic communications<br><em>for high-stakes</em><br>environments.</h1>
